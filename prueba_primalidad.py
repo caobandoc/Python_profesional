@@ -1,4 +1,4 @@
-def es_primo(numero):
+def es_primo(numero) -> bool:
     contador = 0
 
     for i in range(1, numero + 1):
