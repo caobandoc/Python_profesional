@@ -1,6 +1,5 @@
-def es_primo(numero) -> bool:
+def es_primo(numero:int) -> bool:
     contador = 0
-
     for i in range(1, numero + 1):
         if i == 1 or i == numero:
             continue
