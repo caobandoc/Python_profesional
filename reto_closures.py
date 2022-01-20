@@ -1,7 +1,7 @@
 def make_division_by(n):
-    """This closure return a function that returns the division of an x number by n
-    """
-    pass
+    def division(x):
+        return int(x/n)
+    return division
 
 def run():
     division_by_3 = make_division_by(3)
