@@ -18,10 +18,10 @@ def fibo_gen(max:int):
             yield aux
 
 if __name__ == "__main__":
-    fibonnaci = fibo_gen(1000)
+    fibonnaci = fibo_gen(int(input("Ingresa el numero maximo: ")))
     try:
         for element in fibonnaci:
             print(element)
             time.sleep(0.5)
     except:
-        print("Termino de iterar hasta 1000")
+        print("Termino de iterar")
