@@ -2,6 +2,9 @@ import time
 
 class FiboIter():
     
+    def __init__(self, max_number:int):
+        self.max_number = max_number
+    
     def __iter__(self):
         self.n1 = 0
         self.n2 = 1
@@ -20,10 +23,12 @@ class FiboIter():
             #self.n2 = self.aux
             #swap
             self.n1, self.n2 = self.n2, self.aux
+            if self.aux > self.max_number:
+                raise StopIteration
             return self.aux
         
 if __name__ == "__main__":
-    fibonacci = FiboIter()
+    fibonacci = FiboIter(13)
     for element in fibonacci:
         print(element)
-        time.sleep(1)
+        time.sleep(0.2)
