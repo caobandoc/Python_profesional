@@ -1,9 +1,7 @@
-def remove_duplicate(some_list):
-    without_duplicates = list(set(some_list))
-    return without_duplicates
+remove_duplicate = lambda some_list:list(set(some_list))
 
 def run():
-    random_list = [1,1,2,2,4]
+    random_list = [1,1,2,2,4,5,6,6]
     print(remove_duplicate(random_list))
     
 if __name__ == '__main__':
